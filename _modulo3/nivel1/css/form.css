@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 90%;
+    max-width: 800px;
+    padding: 1rem;    
+    border: 1px solid black;
+    border-radius: .4rem;
+    font-size: 1.3rem;
+}
+
+form > label{    
+    display: block;
+    margin-top: 0.4rem;
+    margin-bottom: .4rem;
+    font-weight: bold;
+}
+
+form > input, select{
+    width: 100%;
+    display: block;
+    font-size: 1.3rem;
+    border: 1px solid #333;
+    padding: .2rem;
+}
+
+input:focus{
+    padding-left: .5rem;
+    transition: .3s ease;
+}
+
+form > input[readonly="1"]{
+    background-color: #ebebeb;
+}
+
+form > input[type="submit"]{
+    background-color: rgb(3, 223, 149);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: .8rem;
+}
+
+form > input[type="submit"]:hover{
+    background-color: rgb(2, 194, 130);
+}
+
+button{
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: .4rem;
+}
+
+table{
+    border: 1px solid gray;
+    border-collapse: collapse;    
+}
+
+table > thead > tr{
+    background-color: whitesmoke;
+}
+
+table td{
+    padding: .3rem;
+}
+
+table > tbody > tr:hover{
+    background-color: rgb(177, 177, 177);
+}

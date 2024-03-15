@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Lista de Pessoas</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Id</td>
+                <td>Nome</td>
+                <td>Endereco</td>
+                <td>Bairro</td>
+                <td>Telefone</td>
+            </tr>
+        </thead>        
+        <tbody>
+            {items}
+        </tbody>            
+    </table>
+    <button onclick="window.location='pessoa_form.php'">
+        <img src="img/icon_insert.svg" alt="Inserir" width="15px">Inserir
+    </button>
+</body>
+</html>            
