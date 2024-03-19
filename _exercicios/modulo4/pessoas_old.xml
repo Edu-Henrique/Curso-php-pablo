@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pessoas>
+  <pessoa id="1">
+    <nome>Joao001</nome>
+    <atributo>
+      <codigo>1</codigo>
+      <nome>joão</nome>
+      <endereco>Rua do João</endereco>
+    </atributo>
+  </pessoa>
+  <pessoa id="2">
+    <nome>Ari002</nome>
+    <atributo>
+      <codigo>2</codigo>
+      <nome>ari</nome>
+      <endereco>Rua do Ari</endereco>
+    </atributo>
+  </pessoa>
+  <pessoa id="3">
+    <nome>Maria003</nome>
+    <atributo>
+      <codigo>3</codigo>
+      <nome>maria</nome>
+      <endereco>Rua da Maria</endereco>
+    </atributo>
+  </pessoa>
+  <pessoa id="4">
+    <nome>Leticia004</nome>
+    <atributo>
+      <codigo>4</codigo>
+      <nome>leticia</nome>
+      <endereco>Rua da Leticia</endereco>
+    </atributo>
+  </pessoa>
+  <pessoa id="5">
+    <nome>Gustavo005</nome>
+    <atributo>
+      <codigo>5</codigo>
+      <nome>gustavo</nome>
+      <endereco>Rua do Gustavo</endereco>
+    </atributo>
+  </pessoa>
+</pessoas>
