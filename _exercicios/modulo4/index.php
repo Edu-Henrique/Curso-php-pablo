@@ -51,4 +51,30 @@ foreach ($pessoas as $pessoa => $atributo){
 
 $dom->appendChild($xmlPessoas);
 $dom->save("pessoas.xml");
-echo $dom->saveXML();
+//echo $dom->saveXML();
+
+$dom = null;
+
+$doc = new DOMDocument();
+$doc->load("pessoas.xml");
+
+$ps = $doc->getElementsByTagName("pessoa");
+
+$arrayXml = [];
+foreach ($ps as $conteudo){
+
+    $atr = $conteudo->getElementsByTagNameNS("*", "*");
+    $pessoaHash = $atr->item(0)->nodeValue;
+    $codigo = $atr->item(2)->nodeValue;
+    $nome = $atr->item(3)->nodeValue;
+    $endereco = $atr->item(4)->nodeValue;
+
+    $arrayXml[$pessoaHash] = [
+        "codigo" => $codigo,
+        "nome" => $nome,
+        "endereco" => $endereco
+    ];
+}
+
+echo "<pre>";
+var_dump($arrayXml);
