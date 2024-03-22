@@ -3,6 +3,7 @@
 class Transaction
 {
     private static $conn;
+    private static $logger;
     private function __construct()
     {
 
@@ -11,6 +12,7 @@ class Transaction
     {
         self::$conn = Connection::open($database);
         self::$conn->beginTransaction();
+        self::$logger = null;
     }
 
     public static function close()
@@ -31,6 +33,18 @@ class Transaction
         if (self::$conn){
             self::$conn->rollback();
             self::$conn = null;
+        }
+    }
+
+    public static function setLogger(Logger $logger)
+    {
+        self::$logger = $logger;
+    }
+
+    public static function log($message)
+    {
+        if (self::$logger){
+            self::$logger->write($message);
         }
     }
 }
