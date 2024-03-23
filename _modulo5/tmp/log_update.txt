@@ -1,0 +1,1 @@
+2024-03-23 22:56:04 : SELECT * FROM produto WHERE ID = 242024-03-23 22:56:04 : SELECT * FROM produto WHERE ID = 242024-03-23 22:56:04 : UPDATE produto  SET id = 24, descricao = 'Guaraná Antarctica', estoque = 90, preco_custo = 4.99, preco_venda = 8.49, codigo_barras = '7549644534852', data_cadastro = '2024-03-23', origem = 'N' WHERE ID = 24

@@ -112,7 +112,7 @@ abstract class Record
             Transaction::log($sql);
             return $conn->exec($sql);
         } else{
-            throw new Exception("Não há transação ativa")
+            throw new Exception("Não há transação ativa");
         }
     }
 
@@ -128,6 +128,13 @@ abstract class Record
         } else{
             throw new Exception("Não há transação ativa");
         }
+    }
+
+    public static function find($id)
+    {
+        $classname = get_called_class();
+        $ar = new $classname;
+        return $ar->load($id);
     }
 
     public function prepare($data)
