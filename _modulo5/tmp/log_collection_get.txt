@@ -1,0 +1,1 @@
+2024-03-24 01:58:45 : SELECT * FROM produto WHERE (estoque > 10 and origem = 'N')2024-03-24 01:58:45 : SELECT count(*) FROM produto WHERE (estoque > 10 and origem = 'N')

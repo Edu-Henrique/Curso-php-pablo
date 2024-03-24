@@ -1,0 +1,5 @@
+2024-03-24 02:17:49 : SELECT * FROM produto WHERE (preco_venda <= 35 and origem = 'N') 
+2024-03-24 02:17:49 : SELECT * FROM produto WHERE ID = 27 
+2024-03-24 02:17:49 : UPDATE produto  SET id = 27, descricao = 'SD CARD  512MB', estoque = 4, preco_custo = 20, preco_venda = 45.5, codigo_barras = '0000000003', data_cadastro = '2015-01-01', origem = 'N' WHERE ID = 27 
+2024-03-24 02:17:49 : SELECT * FROM produto WHERE ID = 46 
+2024-03-24 02:17:49 : UPDATE produto  SET id = 46, descricao = 'MOUSE PS2 A7 AZUL/PLATA', estoque = 20, preco_custo = 5, preco_venda = 19.5, codigo_barras = '0000000022', data_cadastro = '2015-01-01', origem = 'N' WHERE ID = 46 
