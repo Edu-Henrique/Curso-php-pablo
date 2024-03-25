@@ -1,5 +1,10 @@
 <?php
 
+namespace Livro\Database;
+
+use PDO;
+use Exception;
+
 class Connection
 {
     private function __construct()
@@ -8,8 +13,10 @@ class Connection
     }
     public static function open($name)
     {
-        if(file_exists("Config/{$name}.ini")){
-            $db = parse_ini_file("Config/{$name}.ini");
+        //"./App/Config/{$name}.ini";
+        $directory = __DIR__ . "/../../../App/Config/{$name}.ini";
+        if(file_exists($directory)){
+            $db = parse_ini_file($directory);
         } else{
             throw new Exception("Arquivo {$name} não encontrado");
         }

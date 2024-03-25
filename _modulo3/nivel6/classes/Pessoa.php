@@ -9,7 +9,7 @@ class Pessoa
     {
         if(empty(self::$conn))
         {
-            $ini = parse_ini_file("config/livro.ini");
+            $ini = parse_ini_file("Config/livro.ini");
             $host = $ini["host"];
             $name = $ini["name"];
             $user = $ini["user"];
