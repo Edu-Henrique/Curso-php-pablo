@@ -3,7 +3,7 @@
 $doc = new DOMDocument();
 $doc->load("bases.xml");
 
-$bases = $doc->getElementsByTagName("base");
+$bases = $doc->getElementsByTagName("Base");
 
 ///var_dump($bases);
 

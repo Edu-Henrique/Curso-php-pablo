@@ -7,7 +7,7 @@ $dom = new DOMDocument("1.0", "UTF-8");
 $dom->formatOutput = true;
 
 $bases = $dom->createElement("bases");
-$base = $dom->createElement("base");
+$base = $dom->createElement("Base");
 $bases->appendChild($base);
 
 $atr = $dom->createAttribute("id");

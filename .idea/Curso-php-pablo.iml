@@ -2,7 +2,12 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/_modulo4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_modulo6/src" isTestSource="false" packagePrefix="Curso\Modulo6\" />
+      <excludeFolder url="file://$MODULE_DIR$/_modulo6/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/_modulo6/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/_modulo6/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/_modulo6/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/_modulo6/vendor/twig/twig" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

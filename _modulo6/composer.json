@@ -1,0 +1,17 @@
+{
+    "name": "curso/modulo6",
+    "autoload": {
+        "psr-4": {
+            "Curso\\Modulo6\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduardo Henrique",
+            "email": "eduardo.henrique.assuncao.ribeiro@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}

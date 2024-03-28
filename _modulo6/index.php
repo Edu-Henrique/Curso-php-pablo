@@ -11,6 +11,9 @@ $al2->addDirectory("App/Control");
 $al2->addDirectory("App/Model");
 $al2->register();
 
+$loader = require_once "vendor/autoload.php";
+$loader->register();
+
 if ($_GET){
     $class = $_GET["class"];
     if (class_exists($class)){

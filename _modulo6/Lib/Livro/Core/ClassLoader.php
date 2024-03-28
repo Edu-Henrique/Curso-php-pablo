@@ -18,7 +18,7 @@ class ClassLoader
         // normalize namespace prefix
         $prefix = trim($prefix, '\\') . '\\';
 
-        // normalize the base directory with a trailing separator
+        // normalize the Base directory with a trailing separator
         $base_dir = rtrim($base_dir, DIRECTORY_SEPARATOR) . '/';
 
         // initialize the namespace prefix array
@@ -26,7 +26,7 @@ class ClassLoader
             $this->prefixes[$prefix] = array();
         }
 
-        // retain the base directory for the namespace prefix
+        // retain the Base directory for the namespace prefix
         if ($prepend) {
             array_unshift($this->prefixes[$prefix], $base_dir);
         } else {
@@ -66,15 +66,15 @@ class ClassLoader
 
     protected function loadMappedFile($prefix, $relative_class)
     {
-        // are there any base directories for this namespace prefix?
+        // are there any Base directories for this namespace prefix?
         if (isset($this->prefixes[$prefix]) === false) {
             return false;
         }
 
-        // look through base directories for this namespace prefix
+        // look through Base directories for this namespace prefix
         foreach ($this->prefixes[$prefix] as $base_dir) {
 
-            // replace the namespace prefix with the base directory,
+            // replace the namespace prefix with the Base directory,
             // replace namespace separators with directory separators
             // in the relative class name, append with .php
             $file = $base_dir
